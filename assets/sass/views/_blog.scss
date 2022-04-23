@@ -1,0 +1,69 @@
+.header-banner {
+    background: url(../img/abogacia_UNSTA.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.card {
+    @include flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card-items {
+    border: $border-dark;
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+    transition: all 400ms ease;
+    align-items: center;
+    cursor: default;
+    &:hover {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3px);
+    }
+    &-img {
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .h3 {
+        font-size: 1.2rem;
+        padding: 10px;
+        text-align: center;
+        font-weight: 900;
+    }
+    p {
+        font-size: .8rem;
+        padding: 10px;
+        text-align: justify;
+        font-weight: 500;
+        color: black;
+    }
+    &-btn {
+        width: 100px;
+        height: 30px;
+        margin-left: 90px;
+        margin-top: 30px;
+        border: 1px solid rgb(6, 9, 180);
+        border-radius: 30px;
+        transition: all 400ms ease;
+        a {
+            text-decoration: none;
+            color: rgb(10, 54, 150);
+            font-weight: 700;
+        }
+        a:hover {
+            color: white;
+        }
+    }
+    &-btn:hover {
+        background-color: rgb(6, 9, 180);
+        transform: scale(1.2,1.2);
+        transition: all 1000ms ease;
+    }
+}

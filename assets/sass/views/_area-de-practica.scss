@@ -1,0 +1,64 @@
+.card{
+    box-sizing: border-box;
+
+   
+}
+.card-items {
+            i{
+            font-size: 80px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+                }
+            h6{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.5rem;
+                }
+          
+}
+
+
+
+
+
+
+
+// MEDIAS QUERY
+@media screen and (max-width:1652px) {}
+
+@media screen and (max-width:1240px) {}
+
+@media screen and (max-width:1148px) {}
+
+@media screen and (max-width:1063px) {}
+
+@media all and (max-width:996px) {}
+
+@media screen and (max-width: 460px) {
+    .sections .sections--DerPenal h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 80px;
+        padding: 10px;
+        .h4 {
+            text-align: center;
+            margin: 20px 0px;
+            font-size: 1.5rem;
+        }
+    }
+    .sections .sections--DerPenal i {
+        font-size: 3rem;
+        margin: 30px 10px;
+    }
+    .sections .sections--DerPenal p {
+        font-size: 1rem;
+        text-align: justify;
+        margin-top: 50px;
+        padding: 25px;
+    }
+    .derechos{
+    display: none;
+}
+    
+}

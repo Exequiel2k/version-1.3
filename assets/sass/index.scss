@@ -1,0 +1,160 @@
+// VARIABLES
+@import "./misc/variables";
+//GLOBALES
+@import "./misc/normalize";
+@import "./misc/mixins";
+//PARTIALS
+@import "./partials/header";
+@import "./partials/footer";
+//VIEWS
+@import "./views/area-de-practica";
+@import "./views/blog";
+@import "./views/contacto";
+@import "./views/sobre-mi";
+
+/*Inicio de Seccion de Practica*/
+
+.practica {
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(rgba(78, 78, 74, 0.699) 1%, rgba(211, 208, 202, 0.281) 83%), url(../img/Parte_Frontal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33.33% 33.33 33.33;
+    grid-template-rows: repeat(3, 1fr);
+    position: relative;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.practica h2 {
+    margin-top: 40px;
+}
+
+.practica:before {
+    content: "";
+    width: 100%;
+    min-height: 650px;
+    position: absolute;
+    background: #c79e57;
+    opacity: 0.2;
+}
+
+.practica h2::before,
+h2::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 5px;
+    background-color: black;
+    top: 70px;
+}
+
+.practica h2::before {
+    left: 250px;
+}
+
+.practica h2::after {
+    right: 250px;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    align-items: start;
+    z-index: 1000;
+}
+
+.links a {
+    align-self: center;
+    justify-self: center;
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: black;
+}
+
+.links a span {
+    color: white;
+}
+
+.links a .iconify {
+    color: black;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+
+
+
+// MEDIAS QUERY
+@media screen and (max-width:1652px) {
+    .practica h2::before {
+        display: none;
+    }
+    .practica h2::after {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:1240px) {}
+
+@media screen and (max-width:1148px) {}
+
+@media screen and (max-width:1063px) {}
+
+@media all and (max-width:996px) {
+    .practica h2 {
+        font-size: 40px;
+    }
+    .links a {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .practica {
+        height: 850px;
+    }
+    .practica h2 {
+        margin-bottom: 20px;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+    .links a {
+        font-size: .5em;
+        margin-bottom: 30px;
+    }
+    .links a i {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .practica:before {
+        content: "";
+        width: 100%;
+        min-height: 1px;
+        position: absolute;
+        background: #c79e5700;
+        opacity: 0.2;
+    }
+    .redes-sociales,
+    span {
+        grid-column: 2/3;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+}

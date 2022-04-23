@@ -1,0 +1,935 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif Display', serif;
+  font-weight: 700;
+  box-sizing: border-box; }
+
+body {
+  background-color: rgba(238, 235, 235, 0.466); }
+
+#container {
+  width: 80%;
+  height: auto;
+  margin: auto; }
+
+.header-banner {
+  background: url(../img/abogacia_UNSTA.jpg);
+  background-repeat: no-repeat;
+  background-size: 1400px;
+  height: 250px;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+@media all and (max-width: 996px) {
+  #container {
+    min-width: 100%; } }
+
+.info {
+  width: 100%;
+  height: 20px;
+  background: #E1B569;
+  text-align: end;
+  color: white; }
+
+.info ul {
+  display: flex;
+  gap: 10px;
+  float: right; }
+  .info ul li {
+    list-style: none; }
+    .info ul li a {
+      text-decoration: none; }
+      .info ul li a i:hover {
+        transition: all 400ms ease;
+        transform: scale(1.5, 1.5); }
+
+.info .fa-brands,
+.fa-solid {
+  font-size: 1.3rem;
+  color: black;
+  margin-right: 10px; }
+
+.header {
+  background: url(../img/abogacia_UNSTA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #e1b5694d;
+  height: 100px; }
+
+.logo img {
+  margin-top: -50px;
+  width: 200px; }
+
+.nav {
+  display: flex;
+  position: relative;
+  left: 10%;
+  flex-wrap: wrap;
+  margin-left: 300px; }
+
+.nav #menu {
+  justify-content: flex-end; }
+
+#menu {
+  margin-top: 40px;
+  margin-right: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  list-style: none; }
+
+#menu #submenu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  margin-top: 5px;
+  width: 400px; }
+
+#menu #submenu li {
+  display: block; }
+
+#menu #submenu li a {
+  font-size: .9rem;
+  padding: 20px; }
+
+#menu #submenu li a i {
+  float: left;
+  color: black;
+  margin-top: 15px; }
+
+.nav #menu .menu__enlaces:hover #submenu {
+  display: block; }
+
+.nav #menu .menu__enlaces:hover #submenu li {
+  align-items: center;
+  width: 15vw;
+  height: 40px;
+  cursor: pointer; }
+
+#menu .menu__enlaces {
+  padding-bottom: 5px; }
+
+.header .nav a {
+  padding: 0px 20px;
+  margin: 10px 0px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  justify-content: flex-end;
+  text-decoration: none; }
+
+.nav #menu .menu__enlaces a:hover {
+  color: white;
+  text-shadow: 1px 1px #110505; }
+
+.frase1 {
+  width: 100%;
+  position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+.frase1 p {
+  position: absolute;
+  left: 47%;
+  top: 200px;
+  color: white;
+  font-size: 45px;
+  text-shadow: 1px 1px 2px black; }
+
+.frase1 span {
+  position: absolute;
+  left: 47%;
+  top: 350px;
+  color: black;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px white; }
+
+#btn {
+  position: absolute;
+  left: 60%;
+  top: 450px;
+  padding: 10px;
+  border-radius: 15px;
+  background: #E1B569;
+  font-size: 16px;
+  box-shadow: 10px 10px 30px black; }
+
+#btn a {
+  text-decoration: none;
+  color: white; }
+
+#btn:hover {
+  background: #c79e57; }
+
+.frase {
+  color: #E1B569;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center; }
+
+.btn {
+  display: block;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 120px;
+  height: 30px;
+  align-items: center;
+  background-color: aqua; }
+
+.btn a {
+  align-items: center; }
+
+.logo button {
+  border: 0px;
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 300px;
+  top: 60px;
+  display: none; }
+
+.logo button i {
+  font-size: 30px; }
+
+@media screen and (max-width: 1652px) {
+  .header .nav {
+    margin-left: 5px; }
+  .frase1 {
+    width: 100%;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+  .logo img {
+    margin-left: 5px;
+    margin-top: -20px;
+    width: 150px; }
+  .frase1 p {
+    top: 300px;
+    color: #080707;
+    font-size: 30px; }
+  .frase1 span {
+    position: absolute;
+    left: 47%;
+    top: 400px; }
+  #btn {
+    position: absolute;
+    left: 60%;
+    top: 450px; }
+  #menu #submenu li a {
+    font-size: .7em;
+    padding: 5px; } }
+
+@media screen and (max-width: 1240px) {
+  .logo {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    height: 170px; }
+  .logo a {
+    grid-column: 3/4;
+    grid-row: 1/3; }
+  .logo a img {
+    margin-left: -30px;
+    margin-top: -70px;
+    width: 250px; }
+  .header .logo .nav {
+    width: 100%;
+    grid-column: 1/6;
+    grid-row: 4/5;
+    margin-top: -10px; }
+  #menu {
+    margin-left: 100px;
+    justify-content: center; }
+  .nav #menu .menu__enlaces:hover #submenu li {
+    align-items: center;
+    width: 15vw;
+    height: 50px; } }
+
+@media screen and (max-width: 1148px) {
+  .header .nav #menu {
+    justify-content: center;
+    box-sizing: border-box; }
+  .header .nav #menu .menu__enlaces a {
+    font-size: 16px; }
+  .frase1 p {
+    top: 300px;
+    color: #080707;
+    font-size: 25px; }
+  .frase1 span {
+    position: absolute;
+    left: 47%;
+    font-size: 15px;
+    top: 380px; }
+  #btn {
+    position: absolute;
+    left: 60%;
+    top: 450px; } }
+
+@media screen and (max-width: 1063px) {
+  .logo {
+    height: 100%;
+    justify-content: center;
+    width: 100%; }
+  .logo a img {
+    margin-left: -36%;
+    margin-top: -70px;
+    width: 250px; }
+  #menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px; }
+  #menu .menu__enlaces {
+    height: 80px;
+    margin-top: -50%;
+    margin-bottom: 50px;
+    justify-content: center;
+    box-sizing: border-box; }
+  #menu .menu__enlaces #submenu li {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: -250px; }
+  #menu .menu__enlaces li {
+    min-width: 100%; }
+  #menu .menu__enlaces .menu__enlaces_ultimo {
+    margin-top: 25px; }
+  .nav #menu .menu__enlaces:hover #submenu {
+    display: flex;
+    flex-direction: row;
+    margin-left: -110px;
+    gap: 10px;
+    margin-bottom: 10px; }
+  .nav #menu .menu__enlaces:hover #submenu li {
+    align-items: center;
+    width: 15vw;
+    height: 40px;
+    cursor: pointer; }
+  .frase1 p {
+    top: 70px;
+    position: absolute;
+    left: 10%;
+    color: #0e0d0d;
+    font-size: 30px; }
+  .frase1 span {
+    position: absolute;
+    color: #110b0b;
+    left: 18%;
+    font-size: 20px;
+    top: 120px; }
+  #btn {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    left: 43%;
+    top: 180px; }
+  header .logo .nav {
+    width: 100%;
+    grid-column: 1/6;
+    grid-row: 4/5;
+    margin-top: -15px;
+    flex-wrap: wrap; }
+  #submenu li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -70px;
+    font-size: 100px; } }
+
+@media screen and (max-width: 996px) {
+  .header-banner {
+    background: url(../img/abogacia_UNSTA.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    height: 450px;
+    margin: 0 auto;
+    margin-bottom: 40px; }
+  #submenu li {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    padding: 0px;
+    margin: 0px; }
+    #submenu li a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: -200px; }
+  #submenu li
+#btn {
+    width: 150px;
+    height: 40px; }
+    #submenu li
+#btn a {
+      align-items: center; } }
+
+@media screen and (max-width: 768px) {
+  .menu__enlaces_ultimo .btn {
+    display: none; }
+  #menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0; }
+  .header .nav #menu .menu__enlaces a {
+    font-size: 25px;
+    color: white; }
+  #menu .menu__enlaces {
+    height: 0px;
+    margin-top: -30%;
+    margin-left: -15px;
+    margin-bottom: 0px;
+    justify-content: center;
+    box-sizing: border-box; }
+  .menu__enlaces {
+    position: relative;
+    top: 40px; }
+  .menu__enlaces_ultimo {
+    display: none; }
+    .menu__enlaces_ultimo a {
+      display: none; }
+  .header {
+    height: 300px; }
+  .frase1 p {
+    display: none; }
+  .frase1 span {
+    display: none; }
+  #btn {
+    margin-top: -250px;
+    width: 120px;
+    height: 43px; }
+  #submenu li a {
+    display: none; }
+  .header .nav {
+    margin-left: 52px; } }
+
+@media screen and (max-width: 768px) and (max-width: 460px) {
+  .info li a {
+    display: flex;
+    align-self: center;
+    justify-content: center; }
+  .logo a img {
+    margin-left: -20px;
+    margin-top: -40px;
+    width: 150px; }
+  .logo {
+    height: 100px; }
+  .frase1 p {
+    top: 40px;
+    left: 0%;
+    color: #020000;
+    text-shadow: 1px 1px 2px white;
+    font-size: 20px;
+    text-align: center; }
+  .frase1 span {
+    display: none; }
+  #btn {
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    left: 35%;
+    top: 180px; }
+  #btn a {
+    font-size: 15px; }
+  .header {
+    height: 400px; }
+  #menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0; }
+  .header .nav #menu .menu__enlaces a {
+    font-size: 15px;
+    color: white; }
+  #menu .menu__enlaces {
+    height: 0px;
+    margin-top: -20%;
+    margin-left: -30px;
+    margin-bottom: 0px;
+    justify-content: center;
+    box-sizing: border-box; }
+  .menu__enlaces_ultimo {
+    display: none; }
+  #submenu li a {
+    display: none; }
+  .frase p {
+    font-size: .5em;
+    padding: 5px; }
+  #btn {
+    display: none; }
+  #menu {
+    position: relative;
+    right: 20px; }
+  #menu .menu__enlaces {
+    position: relative;
+    left: -15%; } }
+
+@media screen and (max-width: 768px) and (max-width: 365px) {
+  #menu .menu__enlaces {
+    margin-left: -20px; }
+  .header .nav #menu .menu__enlaces a {
+    font-size: 15px; }
+  #menu {
+    position: relative;
+    right: 10px; }
+  #menu .menu__enlaces {
+    position: relative;
+    left: -10%; } }
+
+/*comienzo de Footer*/
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 100px);
+  width: 100%;
+  height: 150px;
+  background: #E1B569;
+  justify-items: center;
+  margin-top: 60px; }
+
+footer img {
+  grid-column: 2/3;
+  margin-top: -55px;
+  width: 200px; }
+  footer img:hover {
+    transition: all 400ms ease;
+    transform: scale(1.2, 1.2); }
+
+.footer-contacto {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 10px;
+  line-height: 30px; }
+
+.fotter-nav {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none; }
+
+.fotter-nav a {
+  text-decoration: none; }
+
+.redes-sociales,
+span {
+  grid-column: 2/3;
+  cursor: pointer;
+  font-size: 20px; }
+
+/*fin del Footer*/
+.derechos {
+  width: 100%;
+  margin: 2px auto;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.603); }
+
+.derechos h6 {
+  color: white;
+  text-align: center;
+  padding: 3px;
+  font-size: 13px; }
+
+@media screen and (max-width: 1148px) {
+  .footer-contacto {
+    font-size: 1rem;
+    color: white; } }
+
+@media screen and (max-width: 460px) {
+  footer {
+    width: 100%;
+    position: absolute; }
+  footer img {
+    width: 100px;
+    position: relative;
+    top: 80px; }
+  .footer-contacto {
+    font-size: .8em;
+    line-height: 20px; }
+  .fotter-nav {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 10px; }
+  .fotter-nav a {
+    text-decoration: none;
+    font-size: .8em; } }
+
+.card {
+  box-sizing: border-box; }
+
+.card-items i {
+  font-size: 80px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center; }
+
+.card-items h6 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.5rem; }
+
+@media screen and (max-width: 460px) {
+  .sections .sections--DerPenal h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 80px;
+    padding: 10px; }
+    .sections .sections--DerPenal h1 .h4 {
+      text-align: center;
+      margin: 20px 0px;
+      font-size: 1.5rem; }
+  .sections .sections--DerPenal i {
+    font-size: 3rem;
+    margin: 30px 10px; }
+  .sections .sections--DerPenal p {
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 50px;
+    padding: 25px; }
+  .derechos {
+    display: none; } }
+
+.header-banner {
+  background: url(../img/abogacia_UNSTA.jpg);
+  background-repeat: no-repeat;
+  background-size: 1400px;
+  height: 250px;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 90px;
+  height: auto;
+  align-items: center;
+  justify-content: center; }
+
+.card-items {
+  border: 1px solid #040303;
+  border-radius: 10px;
+  width: 300px;
+  height: 500px;
+  transition: all 400ms ease;
+  align-items: center;
+  cursor: default; }
+  .card-items:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px); }
+  .card-items-img {
+    margin: 0 auto;
+    padding: 10px; }
+  .card-items .h3 {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    font-weight: 900; }
+  .card-items p {
+    font-size: .8rem;
+    padding: 10px;
+    text-align: justify;
+    font-weight: 500;
+    color: black; }
+  .card-items-btn {
+    width: 100px;
+    height: 30px;
+    margin-left: 90px;
+    margin-top: 30px;
+    border: 1px solid #0609b4;
+    border-radius: 30px;
+    transition: all 400ms ease; }
+    .card-items-btn a {
+      text-decoration: none;
+      color: #0a3696;
+      font-weight: 700; }
+    .card-items-btn a:hover {
+      color: white; }
+  .card-items-btn:hover {
+    background-color: #0609b4;
+    transform: scale(1.2, 1.2);
+    transition: all 1000ms ease; }
+
+.contacto {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr); }
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px; }
+
+form {
+  width: 90%;
+  padding: 20px;
+  grid-column: 1/2; }
+
+label {
+  font-size: 18px;
+  display: block; }
+
+textarea {
+  resize: vertical;
+  max-height: 300px;
+  min-height: 100px; }
+
+input,
+textarea,
+select {
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; }
+
+input:focus {
+  border: 3px solid #E1B569;
+  outline: 0;
+  box-shadow: 0px 0px 2px 2px rgba(225, 181, 105, 0.4); }
+
+input[type="submit"] {
+  margin-top: 40px;
+  background: #E1B569;
+  font-size: 20px;
+  margin-bottom: opx;
+  border-radius: 10px;
+  color: white; }
+
+input[type="submit"]:hover {
+  background: #c79e57;
+  color: black;
+  cursor: pointer; }
+
+.maps {
+  float: right;
+  margin-left: 10px;
+  padding-left: 10px; }
+
+iframe {
+  padding-top: 20px;
+  width: 100%;
+  height: 98%; }
+
+.contacto select option {
+  background: white; }
+
+.contacto ul li {
+  color: red;
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+@media all and (max-width: 996px) {
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; }
+  label {
+    text-align: center; }
+  input,
+  textarea,
+  select {
+    width: 112%; }
+  .contacto .maps {
+    height: 700px;
+    padding: 10px;
+    border: 1px solid #f5880c;
+    margin: 0px; } }
+
+@media screen and (max-width: 460px) {
+  label {
+    text-align: center; }
+  input,
+  textarea,
+  select {
+    width: 112%; }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; }
+  .contacto .maps {
+    height: 500px;
+    padding: 10px;
+    border: 1px solid #f5880c;
+    margin: 0px; } }
+
+.header-banner {
+  background: url(../img/abogacia_UNSTA.jpg);
+  background-repeat: no-repeat;
+  background-size: 1400px;
+  height: 250px;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.main {
+  margin-top: 50px; }
+
+.main .main--h2 {
+  font-size: 5rem;
+  color: #E1B569;
+  text-align: center;
+  margin-bottom: 40px;
+  text-decoration: underline; }
+
+.main--img {
+  position: relative;
+  float: left;
+  margin-right: 20px; }
+
+.main--parrafo {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: justify; }
+
+@media screen and (max-width: 460px) {
+  .main {
+    margin-top: 50px; }
+  .main .main--h2 {
+    font-size: 3rem;
+    color: #0e0a05;
+    text-align: center;
+    margin-bottom: 40px;
+    text-decoration: underline; }
+  .main--img {
+    width: 100%;
+    margin-right: 20px;
+    padding: 25px; }
+  .main--parrafo {
+    font-size: .8rem;
+    margin-bottom: 30px;
+    text-align: justify;
+    padding: 25px; } }
+
+/*Inicio de Seccion de Practica*/
+.practica {
+  width: 100%;
+  height: 650px;
+  background: linear-gradient(rgba(78, 78, 74, 0.699) 1%, rgba(211, 208, 202, 0.281) 83%), url(../img/Parte_Frontal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 33.33% 33.33 33.33;
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 40px; }
+
+.practica h2 {
+  margin-top: 40px; }
+
+.practica:before {
+  content: "";
+  width: 100%;
+  min-height: 650px;
+  position: absolute;
+  background: #c79e57;
+  opacity: 0.2; }
+
+.practica h2::before,
+h2::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  top: 70px; }
+
+.practica h2::before {
+  left: 250px; }
+
+.practica h2::after {
+  right: 250px; }
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  align-items: start;
+  z-index: 1000; }
+
+.links a {
+  align-self: center;
+  justify-self: center;
+  color: white;
+  text-decoration: none; }
+
+.links a:hover {
+  color: black; }
+
+.links a span {
+  color: white; }
+
+.links a .iconify {
+  color: black; }
+
+.links a i {
+  font-size: 3rem; }
+
+@media screen and (max-width: 1652px) {
+  .practica h2::before {
+    display: none; }
+  .practica h2::after {
+    display: none; } }
+
+@media all and (max-width: 996px) {
+  .practica h2 {
+    font-size: 40px; }
+  .links a {
+    font-size: 30px; } }
+
+@media screen and (max-width: 460px) {
+  .practica {
+    height: 850px; }
+  .practica h2 {
+    margin-bottom: 20px; }
+  .links {
+    display: flex;
+    flex-direction: column; }
+  .links a {
+    font-size: .5em;
+    margin-bottom: 30px; }
+  .links a i {
+    font-size: 2em;
+    margin-bottom: 10px; }
+  .practica:before {
+    content: "";
+    width: 100%;
+    min-height: 1px;
+    position: absolute;
+    background: #c79e5700;
+    opacity: 0.2; }
+  .redes-sociales,
+  span {
+    grid-column: 2/3;
+    cursor: pointer;
+    font-size: 20px; } }

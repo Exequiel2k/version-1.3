@@ -1,0 +1,66 @@
+.header-banner {
+    background: url(../img/abogacia_UNSTA.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.main {
+    margin-top: 50px;
+}
+
+.main .main--h2 {
+    font-size: 5rem;
+    color: #E1B569;
+    text-align: center;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.main--img {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
+.main--parrafo {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+// MEDIAS QUERY
+@media screen and (max-width:1652px) {}
+
+@media screen and (max-width:1240px) {}
+
+@media screen and (max-width:1148px) {}
+
+@media screen and (max-width:1063px) {}
+
+@media all and (max-width:996px) {}
+
+@media screen and (max-width: 460px) {
+    .main {
+        margin-top: 50px;
+    }
+    .main .main--h2 {
+        font-size: 3rem;
+        color: #0e0a05;
+        text-align: center;
+        margin-bottom: 40px;
+        text-decoration: underline;
+    }
+    .main--img {
+        width: 100%;
+        margin-right: 20px;
+        padding: 25px;
+    }
+    .main--parrafo {
+        font-size: .8rem;
+        margin-bottom: 30px;
+        text-align: justify;
+        padding: 25px;
+    }
+}

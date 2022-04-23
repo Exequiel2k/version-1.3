@@ -1,0 +1,119 @@
+/*comienzo de Footer*/
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 100px);
+    width: 100%;
+    height: 150px;
+    background: #E1B569;
+    justify-items: center;
+    margin-top: 60px;
+}
+
+footer img {
+    grid-column: 2/3;
+    margin-top: -55px;
+    width: 200px;
+    &:hover{
+        transition: all 400ms ease;
+        transform: scale(1.2 ,1.2);
+}}
+
+.footer-contacto {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.fotter-nav {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.fotter-nav a {
+    text-decoration: none;
+}
+
+.redes-sociales,
+span {
+    grid-column: 2/3;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/*fin del Footer*/
+
+.derechos {
+    width: 100%;
+    margin: 2px auto;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.derechos h6 {
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-size: 13px;
+}
+
+// MEDIAS QUERY
+@media screen and (max-width:1652px) {}
+
+@media screen and (max-width:1240px) {}
+
+@media screen and (max-width:1148px) {
+    .footer-contacto {
+        font-size: 1rem;
+        color: white;
+    }
+}
+
+@media screen and (max-width:1063px) {}
+
+@media all and (max-width:996px) {}
+
+@media screen and (max-width: 460px) {
+    footer {
+        width: 100%;
+        position: absolute;
+    }
+    footer img {
+        width: 100px;
+        position: relative;
+        top: 80px;
+    }
+    .footer-contacto {
+        font-size: .8em;
+        line-height: 20px;
+    }
+    .fotter-nav {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 12px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        line-height: 10px;
+    }
+    .fotter-nav a {
+        text-decoration: none;
+        font-size: .8em;
+    }
+}
